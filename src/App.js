@@ -22,11 +22,13 @@ const App = () => {
     }, [])
 
     return (
+        <div className={classes.body}>
         <div>
             <div className={classes.logoContainer}>
-                <img src="https://ai-news-project.s3.amazonaws.com/news.jpg" className={classes.alanLogo} alt="ai news logo" />
+                <img src="https://ai-news-project.s3.amazonaws.com/alan.png" className={classes.alanLogo} alt="ai news logo" />
             </div>
             <NewsCards articles={newsArticles} />
+        </div>
         </div>
     );
 }

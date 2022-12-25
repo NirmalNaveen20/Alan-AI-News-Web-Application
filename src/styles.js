@@ -1,6 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
+  body: {
+    backgroundColor: '#1f1f38',
+  },
   footer: {
     textAlign: 'center',
     position: 'fixed',
