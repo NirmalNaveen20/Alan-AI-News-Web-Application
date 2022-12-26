@@ -8,6 +8,7 @@ const alanKey = 'fe04b6dff564d71cb8e629e20856f8482e956eca572e1d8b807a3e2338fdd0d
 
 const App = () => {
     const [newsArticles, setNewsArticles] = useState([]);
+    const [activeArticle, setActiveArticle] = useState(-1);
     const classes = useStyles();
 
     useEffect(() => {
@@ -16,6 +17,9 @@ const App = () => {
             onCommand: ( { command, articles } ) => {
                 if(command === 'newHeadlines') {
                     setNewsArticles(articles);
+                    setActiveArticle(-1);
+                } else if (command === 'highlight') {
+                    setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
                 }
             }
         })
@@ -27,7 +31,7 @@ const App = () => {
             <div className={classes.logoContainer}>
                 <img src="https://ai-news-project.s3.amazonaws.com/alan.png" className={classes.alanLogo} alt="ai news logo" />
             </div>
-            <NewsCards articles={newsArticles} />
+            <NewsCards articles={newsArticles} activeArticle = {activeArticle} />
         </div>
         </div>
     );
