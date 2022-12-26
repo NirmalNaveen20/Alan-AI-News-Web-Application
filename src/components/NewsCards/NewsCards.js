@@ -5,9 +5,9 @@ import useStyles from './styles.js';
 import NewsCard from '../NewsCard/NewsCard.js';
 
 const infoCards = [
-    { color: '#00838f', title: 'Latest News', text: 'Give me the latest news' },
+    { color: '#00838f', title: 'Small Talk With Alan', text: 'Hello!, What is your birthday?, Who are you?, Where are you from?, Will you marry me'},
     { color: '#1565c0', title: 'News by Categories', info: 'Business, Entertainment, General, Health, Science, Sports, Technology', text: 'Give me the latest Technology news' },
-    { color: '#4527a0', title: 'News by Terms', info: 'Bitcoin, PlayStation 5, Smartphones, Donald Trump...', text: 'What\'s up with PlayStation 5' },
+    { color: '#4527a0', title: 'News by Terms', info: 'Bitcoin, PlayStation 5, Smartphones, Apple', text: 'What\'s up with PlayStation 5' },
     { color: '#283593', title: 'News by Sources', info: 'CNN, Wired, BBC News, Time, IGN, Buzzfeed, ABC News...', text: 'Give me the news from CNN' },
 ];
 

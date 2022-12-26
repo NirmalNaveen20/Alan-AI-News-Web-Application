@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import alanBtn from '@alan-ai/alan-sdk-web';
-
+import logo from './images/alan.png';
 import NewsCards from './components/NewsCards/NewsCards.js';
 import useStyles from './styles.js';
 
@@ -31,7 +31,7 @@ const App = () => {
         <div className={classes.body}>
         <div>
             <div className={classes.logoContainer}>
-                <img src="https://ai-news-project.s3.amazonaws.com/alan.png" className={classes.alanLogo} alt="ai news logo" />
+                <img src={logo} className={classes.alanLogo} alt="ai news logo" />
             </div>
             <NewsCards articles={newsArticles} activeArticle = {activeArticle} />
         </div>
